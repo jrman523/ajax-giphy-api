@@ -6,13 +6,36 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Giphy API</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="assests/stylesheet/reset.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" media="screen" href="assests/stylesheet/stylesheet.css">
-    <script src="assests/javascript/jquery-3.3.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 </head>
 
 <body>
-
+    <div class="container-fluid">
+        <div class="row">
+            <div id="button-view" class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <div class="input-group mb-3">
+                    <input type="text" class="form-control" placeholder="enter a animal name" aria-describedby="add-gif" id="gif-input">
+                    <div class="input-group-append">
+                      <button class="btn btn-outline-info" type="button" id="add-gif">Add Giff</button>
+                    </div>
+                  </div>
+            </div>
+        </div>
+        <div class="row">
+            <div id="gifs-appear-here" class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                
+            </div>
+        </div>
+    </div>
 
     <script src="assests/javascript/app.js"></script>
 </body>
