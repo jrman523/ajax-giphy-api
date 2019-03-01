@@ -48,7 +48,8 @@ $("#add-gif").on("click", function (event) {
 
 renderButtons();
 
-$(".gif").on("click", function(){
+$(".gif").on("click", function(event){
+    event.preventDefault();
     gif = $(this).attr("data-name");
     gifDisplay();
 });
