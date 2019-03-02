@@ -1,8 +1,8 @@
 var gifs = ["lion", "cat", "dog", "mouse", "wolf", "bear", "eagle", "tiger", "bird", "monkey", "turtle", "fox"];
 
-var gif;
+//var gif;
 
-function gifDisplay() {
+function gifDisplay(gif) {
 
     var queryURL = "https://api.giphy.com/v1/gifs/search?q=" + gif + "&api_key=dc6zaTOxFJmzC&limit=10";
 
@@ -21,7 +21,7 @@ function gifDisplay() {
             Div.append(p);
             Div.append(Image);
             $("#gifs-appear-here").prepend(Div);
-          }
+        }
     });
 }
 
@@ -48,9 +48,9 @@ $("#add-gif").on("click", function (event) {
 
 renderButtons();
 
-$(".gif").on("click", function(event){
+$(document).on("click", ".gif", function (event) {
     event.preventDefault();
-    gif = $(this).attr("data-name");
-    gifDisplay();
+    var gif = $(this).attr("data-name");
+    gifDisplay(gif);
 });
 
